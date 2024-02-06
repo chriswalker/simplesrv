@@ -1,0 +1,31 @@
+/*
+ * General.
+ */
+ 
+body {
+  /*font-family: monospace; */
+  font-size: 16px;
+  height: 100%;
+  position: fixed;
+  margin: 0;
+}
+
+table, thead, td {
+  border-collapse: collapse;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+thead>tr { font-weight: bold; }
+td { vertical-align: top; }
+
+/*
+ * Layouts.
+ */
+
+
+/* The list of known items. */
+#items-list {
+  height: 37.5vh; 
+}
+

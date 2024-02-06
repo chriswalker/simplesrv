@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A minimal HTTP application">
+
+    <title>simplesrv</title>
+
+    <link rel="icon" href="data:base64,=" />
+    <link rel="stylesheet" href="/static/simplesrv.css" />
+</head>
+<body>
+    <h2>simplesrv</h2>
+    <div id="items-list">
+        {{if . }}
+            <table>
+                <thead>
+                    <td>ID</td>
+                    <td>Item</td>
+                    <td>Description</td>
+                    <td>Created on</td>
+                </thead>
+                <tbody>
+                {{range .}}
+                    <tr>
+                        <td>{{.ID}}</td>
+                        <td>{{.Title}}</td>
+                        <td>{{.Description}}</td>
+                        <td>{{humanDate .CreationDate}}</td>
+                    </tr>
+                {{end}}
+                </tbody>
+            </table>
+        {{end}}
+    </div>
+</body>
+</html>
