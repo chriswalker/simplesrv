@@ -1,6 +1,6 @@
 module github.com/chriswalker/simplesrv
 
-go 1.21.6
+go 1.22
 
 require (
 	github.com/dustin/go-humanize v1.0.1 // indirect
